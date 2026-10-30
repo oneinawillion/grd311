@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford | Escape</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+        <style>
+    html,body{
+        margin: 0;
+    }
+
+    .hero{
+        background-image: url("images/hero_background.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 100vh;
+        color: white;
+        position: relative;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        padding-top: 20px;
+    }
+
+    nav>ul>li{
+        text-decoration: none;
+        list-style-type: none;
+        display: inline;
+        text-transform: uppercase;
+        font-family: "Bebas Neue", sans-serif;
+    }
+
+    nav>ul:first-child{
+        display: flex;
+        align-items: center;
+        gap: 65px;
+    }
+
+    nav>ul:last-child{
+        margin-right: 25px;
+    }
+
+    .search::before{
+        content:url("images/search.png")
+    }
+    .map::before{
+        content: url("images/location.png");
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    .user::before{
+        content: url("images/account.png");
+        margin-right: 25px;
+        margin-left: 25px;
+    }
+    .lang::before{
+        content: url("images/globe.png");
+        margin-right: 25px;
+        margin-left: 5px;
+    }
+
+    .hero-info{
+        position: absolute;
+        width: 400px;
+        left: 40px;
+        bottom: 125px;
+        font-family: "Bebas Neue", sans-serif;
+        margin-left: 30px;
+    }
+
+     .vehicle-year{
+    font-size: 30px;
+    line-height: 1;
+    margin-bottom: 4px;
+    }
+
+    .hero-info>h1{
+        display: block;
+        font-size: 70px;
+        line-height: 1;
+        margin: 4px 0 8px;
+        text-transform: uppercase;
+    }
+
+    .registered{
+        font-size: 22px;
+        vertical-align: top;
+        position: relative;
+        top: 2px;
+        margin-left: 2px;
+    }
+
+    .footnote{
+        font-size: 20px;
+        vertical-align: super;
+        margin-left: 2px;
+    }
+
+    .hero-info>h2{
+        font-size: 30px;
+        margin: 0 0 8px;
+        text-transform: uppercase;
+    }
+
+    .hero-info>h3{
+        font-size: 20px;
+        margin: 0 0 35px;
+        text-transform: uppercase;
+    }
+
+    .hero-info>h3>a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .hero-info>ul{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-info>ul>li{
+        list-style-type: none;
+        white-space: nowrap;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 22px;
+        text-transform: uppercase;
+        border: 1px solid white;
+        padding: 10px 16px;
+        border-radius: 20px;
+    }
+
+    .hero-section {
+    background-image: url("images/skyline-ford-ad.png");
+    background-size: 1919px 298px;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    min-height: 1020px;
+    padding: 10px 40px 40px;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 1919px;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+margin: 0 auto;
+padding: 0px;
+width: 100%;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 250px;
+    margin-left: 112px;
+}
+
+.car {
+    flex: 1;
+    min-width: 0;
+}
+.car img {
+    width: 321px;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+}
+
+.car-info {
+    background-color: lightgray;
+    width: 321px;
+    height: 362px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.car h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 16px 0 10px;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.car ul {
+    padding-left: 16px;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.car ul li {
+    margin-bottom: 8px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    width: 160px;
+    height: 40px;
+    margin-top: 55px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 1919px;
+    min-height: 1078px;
+}
+
+.hero-section header {
+    padding-top: 10px;
+    padding-left: 130px;
+}
+
+.hero-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 65px;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+        </style>
+
+
+
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <nav>
+                <ul>
+                    <li><img src="images/FordOval.png" alt="ford oval logo"></li>
+                    <li>vehicles</li>
+                    <li>shop</li>
+                    <li>support &amp; service</li>
+                    <li>ford pro solutions</li>
+                </ul>
+                <ul>
+                    <li><span class="search"></span></li>
+                    <li><span class="map"></span>locate dealer</li>
+                    <li><span class="user"></span></li>
+                    <li><span class="lang"></span></li>
+                </ul>
+            </nav>
+
+            <div class="hero-info">
+                <div class="vehicle-year">2026</div>
+                <h1>Escape<sup class="registered">®</sup></h1>
+                <h2>starting at $30,350<sup class="footnote">1</sup></h2>
+                <h3><a href="#">details</a></h3>
+                <ul>
+                    <li>search inventory</li>
+                    <li>2026 escape</li>
+                </ul>
+            </div>
+
+            
+        </div>
+
+        <div class="product-info"></div>
+
+             <div class="hero-section">
+
+            <header>
+
+            <h1 class="hero-title">FIND THE RIGHT RIDE FOR YOUR ROAD</h1>
+
+            <p class="hero-subtitle">4 OPTIONS TO MAKE YOUR MOVE</p>
+
+            </header>
+
+        <div class="car-container">
+            
+            <article class="car">
+                <img src="images/ford-car-1.png" alt="ford escape plug-in hybrid">
+
+                <div class="car-info">
+                <h2>Escape Plug-In Hybrid</h2>
+                
+                <p class="price">Starting at $35,400</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGe (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+
+            <article class="car">
+                <img src="images/ford-car-2.png" alt="ford Escape Active">
+
+                <div class="car-info">
+                <h2>Escape Active</h2>
+                
+                <p class="price">Starting at $30,350</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGE (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+
+            <article class="car">
+                <img src="images/ford-car-3.png" alt="ford Escape ST-Line">
+
+                <div class="car-info">
+                <h2>Escape ST-Line</h2>
+                
+                <p class="price">Starting at $31,195</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGE (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+
+            <article class="car">
+                <img src="images/ford-car-4.png" alt="ford Escape Platinum">
+
+                <div class="car-info">
+                <h2>Escape Platinum</h2>
+                
+                <p class="price">Starting at $37,940</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGe (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+            
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
