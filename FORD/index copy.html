@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<style>
+
+.hero-section {
+    background-image: url("images/skyline-ford-ad.png");
+    background-size: 1919px 298px;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+    min-height: 1020px;
+    padding: 10px 40px 40px;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 1919px;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+margin: 0 auto;
+padding: 0px;
+width: 100%;
+}
+
+.car-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 200px;
+    margin-left: 112px;
+}
+
+.car {
+    flex: 1;
+    min-width: 0;
+}
+.car img {
+    width: 321px;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+}
+
+.car-info {
+    background-color: lightgray;
+    width: 321px;
+    height: 362px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.car h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 16px 0 10px;
+}
+
+.price {
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.car ul {
+    padding-left: 16px;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.car ul li {
+    margin-bottom: 8px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    width: 160px;
+    height: 40px;
+    margin-top: 55px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    width: 1919px;
+    min-height: 1078px;
+}
+
+.hero-section header {
+    padding-top: 40px;
+    padding-left: 130px;
+}
+
+.hero-title {
+    font-family: "Bebas Neue", sans-serif;
+    width: 813px;
+    height: 101px;
+    font-size: 65px;
+    margin-bottom: -65px;
+}
+
+.hero-subtitle {
+    font-family: "Bebas Neue", sans-serif;
+    width: 813px;
+    height: 101px;
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+</style>
+
+</head>
+
+    <body>
+
+        <div class="hero-section">
+
+     <header>
+
+        <h1 class="hero-title">FIND THE RIGHT RIDE FOR YOUR ROAD</h1>
+
+        <p class="hero-subtitle">4 OPTIONS TO MAKE YOUR MOVE</p>
+
+    </header>
+    <main>
+
+        <div class="car-container">
+            
+            <article class="car">
+                <img src="images/ford-car-1.png" alt="ford escape plug-in hybrid">
+
+                <div class="car-info">
+                <h2>Escape Plug-In Hybrid</h2>
+                
+                <p class="price">Starting at $35,400</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGe (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+
+            <article class="car">
+                <img src="images/ford-car-2.png" alt="ford Escape Active">
+
+                <div class="car-info">
+                <h2>Escape Active</h2>
+                
+                <p class="price">Starting at $30,350</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGE (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+
+            <article class="car">
+                <img src="images/ford-car-3.png" alt="ford Escape ST-Line">
+
+                <div class="car-info">
+                <h2>Escape ST-Line</h2>
+                
+                <p class="price">Starting at $31,195</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGE (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+
+            <article class="car">
+                <img src="images/ford-car-4.png" alt="ford Escape Platinum">
+
+                <div class="car-info">
+                <h2>Escape Platinum</h2>
+                
+                <p class="price">Starting at $37,940</p>
+
+                    <ul>
+                        <li>2.5L IVCT Atkinson Cycle I-4 Hybrid Engine</li>
+                        <li>Standard Front-Wheel Drive</li>
+                        <li>13.2-inch Center Display</li>
+                        <li>101 EPA-est. MPGe (combined)</li>
+                    </ul>
+
+                    <a href="#" class="button">Build & Price</a>
+                </div>
+
+            </article>
+
+        </div>
+
+      </main>
+    </div>
+      <footer>
+
+        <p>William Garcia  GRD311.</p>
+
+      </footer>
+    </body>
+</html>
